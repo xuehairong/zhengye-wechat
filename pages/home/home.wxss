@@ -1,0 +1,77 @@
+page {
+  background-color: #f6f6f6;
+}
+.header{
+  text-align: center;
+  height: 100rrpx;
+  line-height: 100rpx;
+  background-color: #272a3b;
+  color: #78bd00;
+  font-size: 20px;
+}
+.notify{
+  float: right;
+  margin-top: 20rpx;
+  margin-left: -20rpx;
+  margin-right: 20rpx;
+}
+.entry{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 16rpx 0;
+  background-color: #272a3b;
+  color:#bbbbbb;
+}
+.empy-grid{
+  height: 136rpx;
+}
+.popup-header{
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 90vw;
+}
+.main {
+  width: 100%;
+  box-sizing: border-box;
+  /* padding-left: 32rpx; */
+  /* padding-right: 32rpx; */
+  /* padding-top: 48rpx; */
+  padding-bottom: 240rpx;
+}
+.tab-most{
+  text-align: center;
+  box-sizing: border-box;
+
+}
+.tab-most .icon-container{
+  width:100rpx;
+  height: 100rpx;
+  padding: 10rpx;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 100%;
+  z-index: 100;
+  top:-70rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 1px solid #ddd;
+}
+.tab-most .icon-container .icon{
+  width:100%;
+  height: 100%;
+  border-radius: 100%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #78bd00;
+}
+.tab-most .label{
+  font-size: 10px;
+  margin-top:44rpx;
+  z-index: 102;
+  position: relative;
+}
+.wrapper {
+  --td-tab-bar-active-color:#78bd00;
+  --td-tab-bar-color:#999
+}

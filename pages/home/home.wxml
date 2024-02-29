@@ -1,0 +1,93 @@
+<view class="main">
+  <view class="header">
+    <text> 早上好！张三先生 </text>
+    <t-badge count="77" offset="{{ [6, 8] }}" class="notify">
+      <t-icon name="notification" size="32" ariaLabel="通知" color='#78bd00' />
+    </t-badge>
+  </view>
+  <t-swiper current="{{current}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}" navigation="{{ { type: 'dots' } }}" list="{{swiperList}}" bind:click="onTap" bind:change="onChange" bind:image-load="onImageLoad" height='160'>
+  </t-swiper>
+  <view class="entry">
+    <view>
+      <t-icon name="cloud" size="32" />
+      <text>功能1</text>
+    </view>
+    <view>
+      <t-icon name="notification" size="32" />
+      <text>功能2</text>
+    </view>
+    <view>
+      <t-icon name="cloud" size="32" />
+      <text>功能3</text>
+    </view>
+    <view>
+      <t-icon name="notification" size="32" />
+      <text>功能4</text>
+    </view>
+    <view>
+      <t-icon name="cloud" size="32" />
+      <text>功能5</text>
+    </view>
+  </view>
+  <view class="block">
+    <t-grid border="{{border}}" column="{{4}}">
+      <t-grid-item text="功能A" image="{{img1}}" />
+      <t-grid-item text="功能B" image="{{img2}}" bind:tap="handlePopup" />
+      <t-grid-item text="功能C" image="{{img3}}" />
+      <t-grid-item text="功能D" image="{{img1}}" />
+      <t-grid-item text="功能E" image="{{img2}}" />
+      <t-grid-item text="功能F" image="{{img3}}" />
+      <t-grid-item text="功能G" image="{{img3}}" />
+      <t-grid-item text="功能G" image="{{img3}}" />
+      <t-grid-item text="功能I" image="{{img3}}" />
+      <t-grid-item text="功能J" image="{{img3}}" />
+      <t-grid-item>
+        <view class="empy-grid"></view>
+      </t-grid-item>
+      <t-grid-item>
+        <view class="empy-grid"></view>
+      </t-grid-item>
+    </t-grid>
+  </view>
+  <view class="wrapper">
+  <t-tab-bar defaultValue="label1" split="{{false}}">
+    <t-tab-bar-item value="label1" icon="home">首页</t-tab-bar-item>
+    <t-tab-bar-item value="label2" icon="app">助手</t-tab-bar-item>
+    <t-tab-bar-item>
+    <view class="tab-most">
+    <view class="icon-container">
+      <view class="icon">
+        <t-icon name="add" size="42" ariaLabel="通知" color='#fff' />
+      </view>
+    </view>
+      <view class="label">常用</view>
+    </view>
+    </t-tab-bar-item>
+    <t-tab-bar-item value="label3" icon="chat">分析</t-tab-bar-item>
+    <t-tab-bar-item value="label4" icon="user">我</t-tab-bar-item>
+  </t-tab-bar>
+</view>
+  <t-popup visible="{{visible}}" bind:visible-change="onVisibleChange" placement="{{'center'}}">
+    <view class="popup">
+      <view class="header popup-header">功能B</view>
+      <t-grid column="{{4}}">
+        <t-grid-item text="功能1" image="{{img1}}" />
+        <t-grid-item text="功能2" image="{{img2}}" bind:tap="handlePopup" />
+        <t-grid-item text="功能3" image="{{img3}}" />
+        <t-grid-item text="功能4" image="{{img1}}" />
+        <t-grid-item text="功能5" image="{{img2}}" />
+        <t-grid-item text="功能6" image="{{img3}}" />
+        <t-grid-item text="功能7" image="{{img3}}" />
+        <t-grid-item text="功能8" image="{{img3}}" />
+        <t-grid-item text="功能9" image="{{img3}}" />
+        <t-grid-item text="功能10" image="{{img3}}" />
+        <t-grid-item>
+          <view class="empy-grid"></view>
+        </t-grid-item>
+        <t-grid-item>
+          <view class="empy-grid"></view>
+        </t-grid-item>
+      </t-grid>
+    </view>
+  </t-popup>
+</view>
